@@ -46,6 +46,16 @@ body::before{
 .intro h2,.section-head h2{font-family:var(--serif);font-size:clamp(2.5rem,6vw,4.7rem);font-weight:400;line-height:1;margin:.3em 0;color:var(--bordeaux)}
 .lead{font-family:var(--serif);font-size:clamp(1.45rem,2.6vw,1.65rem);font-style:italic;line-height:1.65;color:var(--bordeaux)}
 .section-head .lead{max-width:820px;margin:20px auto 0}
+.contacts-bar{margin-top:28px}
+.contacts-label{font-family:var(--display);font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.contacts-actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+.contact-btn{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:999px;text-decoration:none;background:rgba(255,255,255,.8);border:1px solid rgba(122,31,43,.22);color:var(--bordeaux);box-shadow:0 6px 20px rgba(122,31,43,.06);backdrop-filter:blur(8px);transition:.25s ease}
+.contact-btn:hover{transform:translateY(-2px);background:var(--bordeaux);color:white;border-color:var(--bordeaux);box-shadow:0 8px 24px rgba(122,31,43,.2)}
+.contact-btn svg{flex-shrink:0;transition:transform .25s ease}
+.contact-btn:hover svg{transform:scale(1.12)}
+.contact-text{display:flex;flex-direction:column;text-align:left;line-height:1.25}
+.contact-text strong{font-size:.74rem;letter-spacing:.04em;font-weight:600}
+.contact-text small{font-size:.66rem;letter-spacing:.04em;opacity:.8;font-family:var(--sans)}
 .roadmap{padding:40px 0 120px}
 .section-head{text-align:center;margin-bottom:56px}
 .timeline{position:relative;max-width:900px;margin:auto}
@@ -112,4 +122,5 @@ footer span{font-family:var(--display);font-size:.72rem;letter-spacing:.28em;opa
   .hero__meta div{padding:8px 0}
   .essentials__grid{grid-template-columns:1fr}
   .section-head h2,.intro h2{font-size:2.5rem}
+  .contact-btn{width:100%;justify-content:center}
 }
